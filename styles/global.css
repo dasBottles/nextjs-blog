@@ -7,6 +7,12 @@
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
+  --charcoal: #264653;
+  --persianGreen: #2A9D8F;
+  --orange-yellow: #E9C46A;
+  --sandyBrown: #F4A261;
+  --burntSienna: #E76F51;
+
 }
 
 html,
@@ -48,9 +54,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 img {
   max-width: 100%;
@@ -201,7 +204,7 @@ i {
 
   .navbar:hover .logo i
   {
-    margin-left: 10rem;
+    margin-left: 14rem;
   }
 
   .navbar:hover .logo-text

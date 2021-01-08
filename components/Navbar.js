@@ -14,7 +14,7 @@ const Navbar = () => {
                 <i className="fas fa-angle-double-right fa-primary" />
               </a>
             </Link>
-          </li>
+            </li>
 
           <li className="nav-item">
             <Link href='/projects'>
@@ -41,10 +41,9 @@ const Navbar = () => {
 
           <li className="nav-item" id="themeButton">
             <a href="#" className="nav-link">
-              <i className="fas fa-primary fa-moon" />
-              <i className="fas fa-primary fa-cloud-moon" />
-              <i className="fas fa-primary fa-cloud-moon-rain" />
-              <span className="link-text">Themify</span>
+              <i className="fas fa-primary fa-moon" id='dark' />
+              <i className="fas fa-sun fa-primary" id='light' />
+              <span>Theme Toggle</span>
             </a>
           </li>
         </ul>
