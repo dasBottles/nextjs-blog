@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Navbar from './Navbar/Navbar'
+import Navbar from './Navbar'
 
 const name = 'Andrew Rattanasack'
 export const siteTitle = 'andrew.exe'
@@ -24,7 +24,6 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <script src="https://kit.fontawesome.com/384bb1b9fd.js" crossorigin="anonymous"></script>
       </Head>
       <header className={styles.header}>
         {home ? (

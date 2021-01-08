@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const Navbar = () => {
   return (
@@ -6,17 +8,21 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="navbar-nav">
           <li className="logo">
-            <a href="#" className="nav-link">
-              <span className="link-text logo-text">andrew.exe</span>
-              <i className="fas fa-angle-double-right fa-primary" />
-            </a>
-          </li>
+            <Link href='/'>
+              <a className="nav-link">
+                <span className="link-text logo-text">andrew.exe</span>
+                <i className="fas fa-angle-double-right fa-primary" />
+              </a>
+            </Link>
+            </li>
 
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              <i className="fas fa-primary fa-flask fa-primary" />
-              <span className="link-text">Projects</span>
-            </a>
+            <Link href='/projects'>
+              <a href="#" className="nav-link">
+                <i className="fas fa-primary fa-flask fa-primary" />
+                <span className="link-text">Projects</span>
+              </a>
+            </Link>
           </li>
 
           <li className="nav-item">
@@ -35,10 +41,9 @@ const Navbar = () => {
 
           <li className="nav-item" id="themeButton">
             <a href="#" className="nav-link">
-              <i className="fas fa-primary fa-moon" />
-              <i className="fas fa-primary fa-cloud-moon" />
-              <i className="fas fa-primary fa-cloud-moon-rain" />
-              <span className="link-text">Themify</span>
+              <i className="fas fa-primary fa-moon" id='dark' />
+              <i className="fas fa-sun fa-primary" id='light' />
+              <span>Theme Toggle</span>
             </a>
           </li>
         </ul>
