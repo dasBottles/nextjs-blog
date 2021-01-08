@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb {
 main {
   margin-left: 5rem;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -126,6 +130,7 @@ i {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  padding-right: 1.1rem;
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
@@ -196,7 +201,7 @@ i {
 
   .navbar:hover .logo i
   {
-    margin-left: 11rem;
+    margin-left: 15rem;
   }
 
   .navbar:hover .logo-text
