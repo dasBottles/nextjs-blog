@@ -2,9 +2,10 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbar from './Navbar/Navbar'
 
-const name = 'David Le'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Andrew Rattanasack'
+export const siteTitle = 'andrew.exe'
 
 export default function Layout({ children, home }) {
   return (
@@ -13,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="A portfolio build on NextJs"
         />
         <meta
           property="og:image"
@@ -23,6 +24,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script src="https://kit.fontawesome.com/384bb1b9fd.js" crossorigin="anonymous"></script>
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -53,7 +55,10 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <Navbar />
+      <main>
+      {children}
+      </main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
