@@ -4,8 +4,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Navbar from './Navbar'
 
-const name = 'Andrew Rattanasack'
+const name = 'David Le'
 export const siteTitle = 'andrew.exe'
+
 
 export default function Layout({ children, home }) {
   return (
@@ -24,28 +25,15 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script defer type='text/javascript' src='../static/themeSwitcher.js'></script>
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>

@@ -13,11 +13,10 @@ if (theme) {
 
 // Btn Event Handlers
 
-darkBtn.on = ('click', () => {
-    alert('test');
-//   body.classList.replace('light', 'dark');
-//   localStorage.setItem('theme', 'dark');
-});
+darkBtn.onclick = () => {
+  body.classList.replace('light', 'dark');
+  localStorage.setItem('theme', 'dark');
+};
 
 lightBtn.onclick = () => {
   body.classList.replace('dark', 'light');
