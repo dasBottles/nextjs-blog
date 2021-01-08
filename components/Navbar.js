@@ -47,7 +47,7 @@ const Navbar = () => {
             <a href='#' className="nav-link">
               <i className="fas fa-primary fa-moon" id='dark' />
               <i className="fas fa-sun fa-primary" id='light' />
-              <span>Theme Toggle</span>
+              <span className='link-text'>Theme Toggle</span>
             </a>
           </li>
         </ul>

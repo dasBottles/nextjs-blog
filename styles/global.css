@@ -78,6 +78,7 @@ i {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
+  overflow: scroll;
 }
 
 .navbar-nav {
@@ -170,12 +171,11 @@ i {
 }
 
 /* Small screens */
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
-    overflow: hidden;
   }
 
   .logo {
@@ -196,7 +196,7 @@ i {
 }
 
 /* Large screens */
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
     width: 5rem;
